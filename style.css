@@ -18,7 +18,6 @@ h1 {
     margin: 10px ;
     width: 250px;
     font-family: 'Bon-Mono';
-    margin-top: 200px;
 
 }
 
@@ -41,7 +40,7 @@ img {
 #posts {
     width: 100%;             /* Der Container soll die gesamte Breite des Bildschirms einnehmen */
     display: flex;
-    justify-content: center; /* Horizontales Zentrieren */
+    align-items: center; /* Horizontales Zentrieren */
     flex-direction: column;
 }
 
