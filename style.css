@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Bon-Mono';
+    src: url(enter-the-gungeon-big.ttf)
+}
+
+body {
+
+    background-color: gainsboro;
+}
+
+h1 {
+    font-family: 'Bon-Mono';
+    text-align: center;
+}
+.post {
+    box-shadow: inset 2em 1em 2em rgb(205, 205, 205),  1em 1em 10em rgb(90, 85, 85);
+    padding: 10px;
+    margin: 10px ;
+    width: 250px;
+    font-family: 'Bon-Mono';
+    margin-top: 200px;
+
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+img {
+    
+    width: 40%;
+}
+
+.image-container {
+    text-align: center; 
+}
+
+#posts {
+    width: 100%;             /* Der Container soll die gesamte Breite des Bildschirms einnehmen */
+    display: flex;
+    justify-content: center; /* Horizontales Zentrieren */
+}
+
+hr {
+
+    border-top: 1px dashed rgb(0, 0, 0);
+}
+
+
+
