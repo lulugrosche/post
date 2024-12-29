@@ -42,6 +42,7 @@ img {
     width: 100%;             /* Der Container soll die gesamte Breite des Bildschirms einnehmen */
     display: flex;
     justify-content: center; /* Horizontales Zentrieren */
+    flex-direction: column;
 }
 
 hr {
