@@ -5,12 +5,23 @@
 
 body {
 
+    background-color: rgb(255, 255, 255);
+    font-family: 'Bon-Mono';
     background-color: gainsboro;
 }
 
 h1 {
     font-family: 'Bon-Mono';
     text-align: center;
+}
+
+h2 {
+    font-family: 'Bon-Mono';
+    text-align: center;
+    font-size: 17px;
+}
+.post {
+   border: 1px solid #000000;
     margin-bottom: 100px;
     margin-top: 40px;
 }
@@ -20,6 +31,8 @@ h1 {
     margin: 10px ;
     width: 250px;
     font-family: 'Bon-Mono';
+    margin-top: 200px;
+    font-size: 17px;
 
 }
 
@@ -40,6 +53,9 @@ img {
 }
 
 #posts {
+    width: 100%;           
+    display: flex;
+    justify-content: center; 
     width: 100%;             /* Der Container soll die gesamte Breite des Bildschirms einnehmen */
     display: flex;
     align-items: center; /* Horizontales Zentrieren */
@@ -50,6 +66,101 @@ hr {
 
     border-top: 1px dashed rgb(0, 0, 0);
 }
+
+
+  svg {
+    position: fixed;
+    z-index: 2; 
+    opacity: 60%;
+    pointer-events: none;
+  }
+
+  .svg1 {
+    top: 0; /* Abstand von oben */
+    left: 300px; /* Abstand von links */
+    width: 500px;
+    height: auto;
+    
+  } 
+  .svg2 {
+    top: 40; /* Abstand von oben */
+    left: 700px; /* Abstand von links */
+    width: 500px;
+    height: auto;
+    
+  } 
+
+  .svg3 {
+    top: 340; /* Abstand von oben */
+    left: 50px; /* Abstand von links */
+    width: 500px;
+    height: auto;
+    
+  } 
+  path {
+    fill: none;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+  
+  .animated-path {
+    animation: draw 130s linear forwards;
+    stroke: #1a7000; 
+    animation-iteration-count: 1;
+  }
+
+  .animated-path2 {
+    animation: draw 130s linear forwards;
+    stroke: #701a00; 
+    animation-iteration-count: 1;
+  }
+
+  .animated-path3 {
+    animation: draw 130s linear forwards;
+    stroke: #ff3c00; 
+    animation-iteration-count: 1;
+  }
+
+  @keyframes draw {
+    from {
+      stroke-dasharray: 0, 500;
+    }
+    to {
+      stroke-dasharray: 500, 0;
+    }
+  }
+
+  /* Button-Styling */
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #ff3c00;
+}
+
+/* Button unten rechts für die About-Seite */
+#about-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: ;
+}
+
+#back-button {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+  
 
 
 
